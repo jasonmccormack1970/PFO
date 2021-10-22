@@ -2,14 +2,14 @@ const image_input = document.querySelector('#image_input1');
 let uploaded_image = '';
 
 image_input.addEventListener('change', function () {
-  console.log(image_input.value);
-
   const reader = new FileReader();
   reader.addEventListener('load', () => {
     uploaded_image = reader.result;
     document.querySelector(
       '#display_image1'
     ).style.backgroundImage = `url(${uploaded_image})`;
+
+    document.getElementById('#display_image1').src = uploaded_image;
   });
   reader.readAsDataURL(this.files[0]);
 });
@@ -35,4 +35,12 @@ function getDate() {
 
 window.onload = function () {
   getDate();
+};
+
+export default {
+  data() {
+    return {
+      value: '',
+    };
+  },
 };

@@ -16,3 +16,7 @@
   resize: both;
   overflow: scroll;
 }
+
+body {
+  background-color: #fff8f8;
+}

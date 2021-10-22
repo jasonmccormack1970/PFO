@@ -1,0 +1,60 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Generate Purchase Recipt</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <form class="receipt-form">
+      <!-- Enter Purchase Receipt Number -->
+      <label for="receipt-number">Receipt Number:</label><br />
+      <input
+        type="text"
+        id="receipt-number"
+        name="receipt-number"
+        size="16"
+      /><br />
+      <!-- Payment Method -->
+      <label for="payment-method">Select Payment Method:</label>
+      <select name="payment-method" id="payment-method">
+        <option value="MasterCard">MasterCard</option>
+        <option value="Visa">Visa</option>
+        <option value="American Express">American Express</option>
+        <option value="Other">Other</option></select
+      ><br />
+
+      <!-- Enter Purchase Date -->
+      <label for="purchase-date">Purchase Date</label><br />
+      <input type="date" id="pruchase-date" name="purchase-date" /><br />
+      <!-- Enter Customer Name -->
+      <label for="customer-name">Customer Name:</label><br />
+      <input
+        type="text"
+        id="customer-name"
+        name="customer-name"
+        size="60"
+      /><br />
+      <!-- Enter Customer Address -->
+      <label for="customer-Address">Customer Address:</label><br />
+      <textarea
+        name="textarea"
+        id="customer-address"
+        name="customer-address"
+        rows="5"
+        cols="40"
+      >
+      </textarea
+      ><br />
+
+      <label for="image_input1">Image File 1 :</label><br />
+      <input type="file" id="image_input1" accept="image/png, image/*" />
+      <div id="display_image1"></div>
+      <br />
+    </form>
+
+    <script src="script.js"></script>
+  </body>
+</html>

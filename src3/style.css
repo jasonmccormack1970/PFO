@@ -1,0 +1,18 @@
+#display_image1,
+#display_image2 {
+  /* width: 375px;
+  height: 211px;
+  border: 1px solid black;
+  background-position: center;
+  background-size: cover;
+  background-clip: border-box; */
+
+  background-size: cover;
+  background-position: center;
+  width: 160px;
+  height: 160px;
+  border: 2px solid;
+  color: pink;
+  resize: both;
+  overflow: scroll;
+}
